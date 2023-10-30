@@ -101,6 +101,7 @@ class Variable extends Model
             case 'string':
             case 'mail':
             case 'text':
+            case 'numeric':
             default:
                 return $this->value;
         }

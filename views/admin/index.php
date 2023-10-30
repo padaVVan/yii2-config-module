@@ -22,6 +22,12 @@ foreach ($data as $name => $variable) {
                 ->hint($variable->hint);
             break;
 
+        case 'numeric':
+            echo $form->field($variable, 'value')
+                ->numberInput($config)
+                ->hint($variable->hint);
+            break;
+
         case 'text':
             echo $form->field($variable, 'value')
                 ->textarea($config)
